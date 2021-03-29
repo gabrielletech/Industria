@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Shopping Cart | Industria</title>
+	<!-- BOOTSTRAP -->
+	<link rel="stylesheet" 
+		  href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+		  integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" 
+		  crossorigin="anonymous"
+	>
+	<!-- CSS -->
+	<link rel="stylesheet" href="mystyle.css">
+	<!-- GOOGLE FONTS -->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+
+	<!-- ION ICONS -->
+	<script type="module" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.esm.js"></script>
+	<script nomodule="" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+	<!-- NAV START -->
+	<header class="header">
+		<div>
+			<ul class="nav">
+				<li class="nav-item">
+					<a href="/Home.html">Home</a>
+				</li>
+				<li class="nav-item">
+					<a href="/Shop.html" class="dropbtn">Shop</a>
+				</li>
+				<li class="nav-item">
+					<a href="/AboutUs.html">About</a>
+				</li>
+				<li class="nav-item">
+					<a href="/Blog.html">Blog</a>
+				</li>
+				<li class="nav-item">
+					<a href="/Gallery.html">Gallery</a>
+				</li>
+				<li class="nav-item">
+					<a href="/Contact.html">Contact</a>
+				</li>
+			</ul>
+		</div>
+		<div class="header-links">
+			<a class="shop-cart" href="Shop.html"><ion-icon name="cart-outline"></ion-icon><span>0</span></a>	
+		</div>
+</header>
+<!-- NAV END -->
+
+	<!-- LOGO -->
+	<div class="cart-logo mt-3 mb-5">
+		<img src="images/industria.jpg" alt="image"  class="cart-logo"/>
+	</div>
+
+	<!--<div class="message"></div> -->
+
+	<div class="items-container">
+		<div class="item-header">
+			<h5 class="item-title">ITEM</h5>
+			<h5 class="item-quantity">QUANTITY</h5>
+			<h5 class="item-total">TOTAL</h5>
+		</div>
+		<div class="items">
+
+		</div>
+	</div>
+
+	<!-- DELIVERY OPTIONS AND USER INFORMATION -->
+	<div class="container">
+		<div class="tab">
+			<button class="tablinks" onclick="checkoutOption(event, 'collect')">Collection</button>
+			<button class="tablinks" onclick="checkoutOption(event, 'delivery')">Delivery</button>
+		</div>
+
+		<!-- TAB CONTENT -->
+		<div id="collect" class="tabcontent">
+			<div class="row cart-row">
+				<div class="col-75">
+				  <div class="container cart-container">
+					<form>
+			  
+					  <div class="row cart-row">
+						<div class="col-50">
+						  <h3>Billing Address</h3>
+						  <label class="cart-label" for="fname"><ion-icon name="person-circle-outline"></ion-icon> Full Name</label>
+						  <input type="text" id="fname" name="firstname" placeholder="...">
+						  <label class="cart-label" for="email"><ion-icon name="mail-outline"></ion-icon> Email</label>
+						  <input type="text" id="email" name="email" placeholder="...">
+						  
+						  <div class="row cart-row">
+							<div class="col-50">
+							  <label class="cart-label" for="select"><ion-icon name="business-outline"></ion-icon> Choose Branch To Collect From:</label>
+							  <select class="branch">
+								  <option>Choose..</option>
+								  <option>1 Hurworth Rd, Queen Of Hearts</option>
+								  <option>Chisi Walk</option>
+							  </select>
+							</div>
+						  </div>
+						</div>
+			  
+						<div class="col-50">
+						  <h3>Payment</h3>
+						  
+						  <label class="cart-label" for="cname">Name on Card</label>
+						  <input type="text" id="cname" name="cardname" placeholder="...">
+						  <label class="cart-label" for="ccnum">Credit card number</label>
+						  <input type="text" id="ccnum" name="cardnumber" placeholder="...">
+						  <label class="cart-label" for="expmonth">Exp Month</label>
+						  <input type="text" id="expmonth" name="expmonth" placeholder="...">
+			  
+						  <div class="row cart-row">
+							<div class="col-50">
+							  <label class="cart-label" for="expyear">Exp Year</label>
+							  <input type="text" id="expyear" name="expyear" placeholder="...">
+							</div>
+							<div class="col-50">
+							  <label class="cart-label" for="cvv">CVV</label>
+							  <input type="text" id="cvv" name="cvv" placeholder="...">
+							</div>
+						  </div>
+						</div>
+			  
+					  </div>
+					  <label class="cart-label">
+						<input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+					  </label>
+					  <input type="submit" value="Continue to checkout" class="cart-btn">
+					</form>
+				  </div>
+				</div>
+			</div>
+		</div>
+
+		<div id="delivery" class="tabcontent">
+			<div class="row cart-row">
+				<div class="col-75">
+				  <div class="container cart-container">
+					<form>
+			  
+					  <div class="row cart-row">
+						<div class="col-50">
+						  <h3>Billing Address</h3>
+						  <label class="cart-label" for="fname"><ion-icon name="person-circle-outline"></ion-icon></i> Full Name</label>
+						  <input type="text" id="fname" name="firstname" placeholder="...">
+						  <label class="cart-label" for="email"><ion-icon name="mail-outline"></ion-icon></i> Email</label>
+						  <input type="text" id="email" name="email" placeholder="...">
+						  <label class="cart-label" for="adr"><ion-icon name="home-outline"></ion-icon></i> Address</label>
+						  <input type="text" id="adr" name="address" placeholder="...">
+						  <label class="cart-label" for="city"><ion-icon name="business-outline"></ion-icon></i> City</label>
+						  <input type="text" id="city" name="city" placeholder="...">
+			  
+						  <div class="row cart-row">
+							<div class="col-50">
+							  <label class="cart-label" for="state">State</label>
+							  <input type="text" id="state" name="state" placeholder="...">
+							</div>
+							<div class="col-50">
+							  <label class="cart-label" for="zip">Zip</label>
+							  <input type="text" id="zip" name="zip" placeholder="...">
+							</div>
+						  </div>
+						</div>
+			  
+						<div class="col-50">
+						  <h3>Payment</h3>
+						  <label class="cart-label" for="fname">Accepted Cards</label>
+						  <div class="icon-container">
+							<ion-icon name="card-outline"></ion-icon>
+							<ion-icon name="logo-paypal"></ion-icon>
+						  </div>
+						  <label class="cart-label" for="cname">Name on Card</label>
+						  <input type="text" id="cname" name="cardname" placeholder="...">
+						  <label class="cart-label" for="ccnum">Credit card number</label>
+						  <input type="text" id="ccnum" name="cardnumber" placeholder="...">
+						  <label class="cart-label" for="expmonth">Exp Month</label>
+						  <input type="text" id="expmonth" name="expmonth" placeholder="...">
+			  
+						  <div class="row cart-row">
+							<div class="col-50">
+							  <label class="cart-label" for="expyear">Exp Year</label>
+							  <input type="text" id="expyear" name="expyear" placeholder="...">
+							</div>
+							<div class="col-50">
+							  <label class="cart-label" for="cvv">CVV</label>
+							  <input type="text" id="cvv" name="cvv" placeholder="...">
+							</div>
+						  </div>
+						</div>
+			  
+					  </div>
+					  <label class="cart-label">
+						<input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+					  </label>
+					  <input type="submit" value="Continue to checkout" class="cart-btn">
+					</form>
+				  </div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- FOOTER -->
+	<section class="footer-section">
+		<footer>
+			<div class="container-fluid">
+				<div class="row align-items-center">
+					<div class="col col-md-5">
+						
+						<ul class="footer-items">
+							<li><img class="footer-logo" src="/images/IndustriaCollective.jpg" alt="footer-logo" /></li>
+							<li><ion-icon name="location-outline"></ion-icon>1 Hurworth Road, Highlands, Harare, Zimbabwe</li>
+							<li><ion-icon name="call-outline"></ion-icon>+263 77 908 7232</li>
+							<li><ion-icon name="mail-outline"></ion-icon>helloclotheszw@gmail.com</li>
+						</ul>
+					</div>
+
+					<div class="col col-md-2">
+						<ul class="footer-items">
+							<li><h5 class="footer-header" id="links">Links</h5></li>
+							<li><a href="/Shop.html" id="products">Products</a></li>
+							<li><a href="/Blog.html">Blog</a></li>
+							<li><a href="/AboutUs.html" id="careers">Careers</a></li>
+							<li><a href="/AboutUs.html" id="privacyPolicy">Privacy Policy</a></li>
+							<li id="tips&faqs">Tips & FAQs</li>
+						</ul>
+					</div>
+
+					<div class="col col-md-2">
+						<ul class="footer-items">
+							<li><h5 class="footer-header" id="shop">Shop</h5></li>
+							<li><a href="/Shop.html#new-arrivals">Catalog</a></li>
+							<li><a href="/Shop.html#new-arrivals">Trending</a></li>
+							<li><a href="/Gallery.html">Gallery</a></li>
+							<li>Rewards</li>
+							<li>Returns Policy</li>
+						</ul>	
+					</div>
+
+					<div class="col col-md-2">
+						<h5 id="connect" class="footer-header">Connect With Us: </h5>
+						<ion-icon class="social-icons" name="logo-facebook"></ion-icon>
+						<ion-icon class="social-icons" name="logo-instagram"></ion-icon>
+						<ion-icon class="social-icons" name="logo-whatsapp"></ion-icon>
+					</div>
+				</div>
+			</div>
+			<div>
+				<p class="bottom-text">&copy; 2021 Industria ZW</p>
+			</div>	
+		</footer>
+    </section>
+  
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="main.js"></script>	
+</body>
+</html>

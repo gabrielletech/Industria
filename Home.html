@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Industria Clothing Collective</title>
+	<!-- BOOTSTRAP -->
+	<link rel="stylesheet" 
+		  href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+		  integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" 
+		  crossorigin="anonymous"
+	>
+	<!-- CSS -->
+	<link rel="stylesheet" href="mystyle.css">
+	<!-- GOOGLE FONTS -->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+
+	<!-- ION ICONS -->
+	<script type="module" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.esm.js"></script>
+	<script nomodule="" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.js"></script>
+
+	<!-- AOS STYLESHEET -->
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+	<!-- NAV BAR -->
+	<header class="header">
+			<div>
+				<ul class="nav">
+					<li class="nav-item">
+						<a href="/Home.html">Home</a>
+					</li>
+					<li class="nav-item">
+						<a href="/Shop.html" class="dropbtn">Shop</a>
+					</li>
+					<li class="nav-item">
+						<a href="/AboutUs.html">About</a>
+					</li>
+					<li class="nav-item">
+						<a href="/Blog.html">Blog</a>
+					</li>
+					<li class="nav-item">
+						<a href="/Gallery.html">Gallery</a>
+					</li>
+					<li class="nav-item">
+						<a href="/Contact.html">Contact</a>
+					</li>
+				</ul>
+			</div>
+			<div class="header-links">
+				<a class="shop-cart" href="Cart.html"><ion-icon name="cart-outline"></ion-icon><span>0</span></a>
+				<div id="cart-info"></div>	
+			</div>
+	</header>
+
+	<!-- WELCOME SECTION -->
+	<section class="welcome-section">
+		<div class="logo">
+			<img class="logo-image" src="/images/industria.jpg" alt="logo" />
+		</div>
+	</section>
+
+	<!-- NEW ARRIVALS SECTION -->
+	<section id="new-arrivals" class="new-arrivals">
+			<h2 class="new-arrivals-title"><a href="/Shop.html">New Arrivals</a></h2>
+			<hr class="line" />
+			<div class="container na-section">
+				<div class="row ">
+					<div data-aos="fade-right" data-aos-delay="100" class="col-3">
+							<img src="images/115889193_1215859095440630_3124536734724679976_n.jpg" alt="clothing item 1" class="pic">
+							<div class="na-links"><a href="/Shop.html">Dresses</a></div>
+					</div>
+					<div data-aos="fade-right" data-aos-delay="400" class="col-3">
+							<img src="images/126487819_1316119962081209_8626173075785479562_n.jpg" alt="clothing item 2" class="pic">
+							<div class="na-links"><a href="/Shop.html">Denim</a></div>
+					</div> 
+					
+					<div data-aos="fade-right" data-aos-delay="700" class="col-3">
+							<img src="images/69833692_937699106589965_1949832117781266432_n.jpg" alt="clothing item 3" class="pic">
+							<div class="na-links"><a href="/Shop.html">Tops</a></div>
+					</div>
+					<div data-aos="fade-right" data-aos-delay="1000" class="col-3">
+							<img src="images/78498933_1016351058724769_390191615563530240_n.jpg" alt="clothing item 4" class="pic">
+							<div class="na-links"><a href="/Shop.html">Shoes</a></div>
+					</div> 
+				</div>	
+			</div>
+			<div class="row">	
+				<button class="shop-now mt-5"><a href="/Shop.html">Shop Now</a></button>
+			</div>
+	</section>
+
+	<!-- WHATS NEW SECTION -->
+	<section id="whats-new" class="whats-new">
+		<div class="container">
+			<h2 class="whats-new-title">
+				<a href="/Blog.html">Our Blog </a>
+			</h2>
+			<div class="row">
+				<div class="col">
+					<img data-aos="flip-up" data-aos-easing="ease-out-cubic"
+					data-aos-duration="2000" src="/images/photo-1492707892479-7bc8d5a4ee93.jpg" alt="blog-image" class="blog-pic" />
+				</div>
+				<div class="col blog-text">
+					<h2 id="whats-happening">What's Hiding in your Handbag, babes?</h2>
+					<small>Posted 2/01/21, <strong>4 min read</strong></small>
+					<p class="article-brief">
+						The contents of your bag say a lot about where you are in life as well as what you value. 
+						In college, I always kept my phone, wallet, keys, and ID with me wherever I went.
+					</p>
+					<p>Once I graduated, I added work-related items, like an ID badge, laptop, notebook, and pen 
+					   to my purse. Now that I've adopted a dog, it's mostly filled with canine accoutrements like 
+					   treats, collapsible food and water bowls, a leash, and doggles.
+					</p>
+					<a href="/Blog.html" class="continue-reading">Continue Reading...</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<!-- SUSCRIBE TO OUR NEWSLETTER -->
+	<div class="bg-image img1">
+		<form class="form-figure">
+			<h3 class="subscribe">Subscribe to our Newsletter</h3>
+			<div class="container">
+				<p>Get the latest updates, deals and many more!</p>
+			</div>
+
+			<div class="container">
+				<input type="text" placeholder="Name" name="name" required />
+				<input type="text" placeholder="email" name="mail" required />
+				<label>
+					<input type="checkbox" checked="checked" name="subscribe" /> Weekly Newsletter, Updates & Deals
+				</label>
+			</div>
+			<div class="container">
+				<input class="subscribe-btn" type="submit" value="Subscribe" id="subscribe-btn" onclick="subscriptions()" />
+			</div>
+		</form>
+	</div>
+
+	<!-- FOOTER -->
+	<section class="footer-section">
+		<footer>
+			<div class="container-fluid">
+				<div class="row align-items-center">
+					<div class="col col-md-5">
+						
+						<ul class="footer-items">
+							<li><img class="footer-logo" src="/images/IndustriaCollective.jpg" alt="footer-logo" /></li>
+							<li><ion-icon name="location-outline"></ion-icon>1 Hurworth Road, Highlands, Harare, Zimbabwe</li>
+							<li><ion-icon name="call-outline"></ion-icon>+263 77 908 7232</li>
+							<li><ion-icon name="mail-outline"></ion-icon>helloclotheszw@gmail.com</li>
+						</ul>
+					</div>
+
+					<div class="col col-md-2">
+						<ul class="footer-items">
+							<li><h5 class="footer-header" id="links">Links</h5></li>
+							<li><a href="/Shop.html" id="products">Products</a></li>
+							<li><a href="/Blog.html">Blog</a></li>
+							<li><a href="/AboutUs.html" id="careers">Careers</a></li>
+							<li><a href="/AboutUs.html" id="privacyPolicy">Privacy Policy</a></li>
+							<li id="tips&faqs">Tips & FAQs</li>
+						</ul>
+					</div>
+
+					<div class="col col-md-2">
+						<ul class="footer-items">
+							<li><h5 class="footer-header" id="shop">Shop</h5></li>
+							<li><a href="/Shop.html#new-arrivals">Catalog</a></li>
+							<li><a href="/Shop.html#new-arrivals">Trending</a></li>
+							<li><a href="/Gallery.html">Gallery</a></li>
+							<li>Rewards</li>
+							<li>Returns Policy</li>
+						</ul>	
+					</div>
+
+					<div class="col col-md-2">
+						<h5 id="connect" class="footer-header">Connect With Us: </h5>
+						<ion-icon class="social-icons" name="logo-facebook"></ion-icon>
+						<ion-icon class="social-icons" name="logo-instagram"></ion-icon>
+						<ion-icon class="social-icons" name="logo-whatsapp"></ion-icon>
+					</div>
+				</div>
+			</div>
+			<div>
+				<p class="bottom-text">&copy; 2021 Industria ZW</p>
+			</div>	
+		</footer>
+    </section>
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="main.js"></script>
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+	<script>
+		AOS.init();
+	</script>
+</body>
+</html>
+<!----------------------------------------------------- END OF CODE ---------------------------------------------------------------------->

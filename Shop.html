@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Industria | Shop </title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <!-- BOOTSTRAP -->
+        <link rel="stylesheet" 
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" 
+        crossorigin="anonymous"
+        >
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="mystyle.css">
+
+        <!-- GOOGLE FONTS -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+
+		<!-- ION ICONS -->
+		<script type="module" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.esm.js"></script>
+		<script nomodule="" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.js"></script>
+
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    </head>
+    <body>
+        <header class="header">
+			<div>
+				<ul class="nav">
+					<li class="nav-item">
+						<a href="/Home.html">Home</a>
+					</li>
+					<li class="nav-item">
+						<a href="/Shop.html" class="dropbtn">Shop</a>
+					</li>
+					<li class="nav-item">
+						<a href="/AboutUs.html">About</a>
+					</li>
+					<li class="nav-item">
+						<a href="/Blog.html">Blog</a>
+					</li>
+					<li class="nav-item">
+						<a href="/Gallery.html">Gallery</a>
+					</li>
+					<li class="nav-item">
+						<a href="/Contact.html">Contact</a>
+					</li>
+				</ul>
+			</div>
+			<div class="header-links">
+				<a class="shop-cart" href="Cart.html"><ion-icon name="cart-outline"></ion-icon><span>0</span></a>	
+			</div>
+	</header>
+                <div class="content">
+
+                    <!-- NEW ARRIVALS SHOP -->
+                    <section class="just-in">
+                        <h1 class="shop-title mt-5">Contemporary Styles You'll Love</h1>
+                        <div class="images container">
+                            <div class="shop-gallery">
+                                <figure data-aos="zoom-in-up" data-aos-delay="500" class="shop-gallery-item-1">
+                                    <a href="#tops">
+                                        <img class="shop-gallery-img" src="/images/photo-1553986433-c4193e6ddc6b.jpg" alt="image" />
+                                    </a>
+                                    <div class="tops-text">
+                                        <div class="price-tag">Tops from <br />$4.99</div>
+                                    </div>
+                                </figure>
+                                <figure data-aos="zoom-in-up" data-aos-delay="1000" class="shop-gallery-item-2">
+                                    <a href="#accessories">
+                                        <img class="shop-gallery-img" src="/images/photo-1496747611176-843222e1e57c.jpg" alt="image" />
+                                    </a>
+                                    <div class="acc-text">
+                                        <div class="price-tag">Accessories from <br /> $2.99 </div>
+                                    </div>
+                                </figure>
+                                <figure data-aos="zoom-in-up" data-aos-delay="1500" class="shop-gallery-item-3">
+                                    <a href="#dresses">
+                                        <img class="shop-gallery-img" src="/images/photo-1502716119720-b23a93e5fe1b.jpg" alt="image" />
+                                    </a>
+                                    <div class="dresses-text">
+                                        <div class="price-tag">Dresses from <br /> $7.99 </div>
+                                    </div>
+                                </figure>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                
+                <h1 class="shop-title">Shop</h1>
+
+                <div class="container-fluid">
+                    <ul class="product-items">
+						
+                    </ul>
+					<div id="myModal" class="modal">
+						
+					</div>
+                </div>
+
+                <!-- FOOTER -->
+	<section class="footer-section">
+		<footer>
+			<div class="container-fluid">
+				<div class="row align-items-center">
+					<div class="col col-md-5">
+						
+						<ul class="footer-items">
+							<li><img class="footer-logo" src="/images/IndustriaCollective.jpg" alt="footer-logo" /></li>
+							<li><ion-icon name="location-outline"></ion-icon>1 Hurworth Road, Highlands, Harare, Zimbabwe</li>
+							<li><ion-icon name="call-outline"></ion-icon>+263 77 908 7232</li>
+							<li><ion-icon name="mail-outline"></ion-icon>helloclotheszw@gmail.com</li>
+						</ul>
+					</div>
+
+					<div class="col col-md-2">
+						<ul class="footer-items">
+							<li><h5 class="footer-header" id="links">Links</h5></li>
+							<li><a href="/Shop.html" id="products">Products</a></li>
+							<li><a href="/Blog.html">Blog</a></li>
+							<li><a href="/AboutUs.html" id="careers">Careers</a></li>
+							<li><a href="/AboutUs.html" id="privacyPolicy">Privacy Policy</a></li>
+							<li id="tips&faqs">Tips & FAQs</li>
+						</ul>
+					</div>
+
+					<div class="col col-md-2">
+						<ul class="footer-items">
+							<li><h5 class="footer-header" id="shop">Shop</h5></li>
+							<li><a href="/Shop.html#new-arrivals">Catalog</a></li>
+							<li><a href="/Shop.html#new-arrivals">Trending</a></li>
+							<li><a href="/Gallery.html">Gallery</a></li>
+							<li>Rewards</li>
+							<li>Returns Policy</li>
+						</ul>	
+					</div>
+
+					<div class="col col-md-2">
+						<h5 id="connect" class="footer-header">Connect With Us: </h5>
+						<ion-icon class="social-icons" name="logo-facebook"></ion-icon>
+						<ion-icon class="social-icons" name="logo-instagram"></ion-icon>
+						<ion-icon class="social-icons" name="logo-whatsapp"></ion-icon>
+					</div>
+				</div>
+			</div>
+			<div>
+				<p class="bottom-text">&copy; 2021 Industria ZW</p>
+			</div>	
+		</footer>
+    </section>
+            
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="/main.js" async defer></script>
+        <script type="text/javaacript" src="/products.json"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+		<script>
+			AOS.init();
+		</script>
+    </body>
+</html>

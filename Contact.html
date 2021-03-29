@@ -1,0 +1,157 @@
+<!---------------------------------------------------- CODE ------------------------------------------------------------------------>
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Contact | Industria </title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- BOOTSTRAP -->
+		<link rel="stylesheet" 
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+			integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" 
+			crossorigin="anonymous"
+		>
+		<!-- CSS -->
+		<link rel="stylesheet" href="mystyle.css">
+		<!-- GOOGLE FONTS -->
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+
+		<!-- ION ICONS -->
+		<script type="module" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.esm.js"></script>
+		<script nomodule="" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.js"></script>
+	</head>
+	<body>
+		<!-- NAV START -->
+		<header class="header">
+            <div>
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a href="/Home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/Shop.html" class="dropbtn">Shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/AboutUs.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/Blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/Gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/Contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="header-links">
+                <a class="shop-cart" href="/Cart.html"><ion-icon name="cart-outline"></ion-icon><span>0</span></a>	
+            </div>
+        </header>
+		<!-- NAV END -->
+		
+		<h1 class="contact-title mt-5">Get In Touch</h1>
+		<div class="container contact-container">
+			<div>
+				<p class="contact-text">Swing by for a cup of coffee & a little retail therapy</p>
+			</div>
+			<div class="row contact-row">
+				<div class="col contact-col">
+					<img src="/images/14990930_344901982536350_6392879444844406940_o.jpg" alt="industria" />
+					<ul class="contact-info">
+						<li><ion-icon name="location-outline"></ion-icon>1 Hurworth Road, Highlands, Harare, Zimbabwe</li>
+						<li><ion-icon name="call-outline"></ion-icon>+263 77 908 7232</li>
+						<li><ion-icon name="mail-outline"></ion-icon>helloclotheszw@gmail.com</li>
+					</ul>
+					<p class="socials">
+						<a href="https://facebook.com/industriazw" target="_blank">
+							<ion-icon class="facebook" name="logo-facebook"></ion-icon>
+						</a>
+						<a href="https://instagram.com/industria_clothing_collective?igshid=1i2ldbc4i4abu" target="_blank">
+							<ion-icon class="instagram" name="logo-instagram"></ion-icon>
+						</a>
+					</p>
+				</div>
+				<div class="col contact-col">
+					<form>
+						<label for="firstname">First Name</label>
+						<input type="text" id="fname" name="firstname" placeholder="Your name..">
+						<label for="lastname">Last Name</label>
+						<input type="text" id="lname" name="lastname" placeholder="Your last name..">
+						<label for="country">Country</label>
+						<select id="country" name="country">
+						<option value="Zimbabwe">Zimbabwe</option>
+						<option value="South Africa">South Africa</option>
+						<option value="Namibia">Namibia</option>
+						</select>
+						<label for="subject">Subject</label>
+						<textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+						<input type="submit" value="Submit">
+					</form>
+					</form>
+				</div>
+			</div>
+		</div>
+		</div>
+
+		<!-- FOOTER -->
+	<section class="footer-section">
+		<footer>
+			<div class="container-fluid">
+				<div class="row align-items-center">
+					<div class="col col-md-5">
+						
+						<ul class="footer-items">
+							<li><img class="footer-logo" src="/images/IndustriaCollective.jpg" alt="footer-logo" /></li>
+							<li><ion-icon name="location-outline"></ion-icon>1 Hurworth Road, Highlands, Harare, Zimbabwe</li>
+							<li><ion-icon name="call-outline"></ion-icon>+263 77 908 7232</li>
+							<li><ion-icon name="mail-outline"></ion-icon>helloclotheszw@gmail.com</li>
+						</ul>
+					</div>
+
+					<div class="col col-md-2">
+						<ul class="footer-items">
+							<li><h5 class="footer-header" id="links">Links</h5></li>
+							<li><a href="/Shop.html" id="products">Products</a></li>
+							<li><a href="/Blog.html">Blog</a></li>
+							<li><a href="/AboutUs.html" id="careers">Careers</a></li>
+							<li><a href="/AboutUs.html" id="privacyPolicy">Privacy Policy</a></li>
+							<li id="tips&faqs">Tips & FAQs</li>
+						</ul>
+					</div>
+
+					<div class="col col-md-2">
+						<ul class="footer-items">
+							<li><h5 class="footer-header" id="shop">Shop</h5></li>
+							<li><a href="/Shop.html#new-arrivals">Catalog</a></li>
+							<li><a href="/Shop.html#new-arrivals">Trending</a></li>
+							<li><a href="/Gallery.html">Gallery</a></li>
+							<li>Rewards</li>
+							<li>Returns Policy</li>
+						</ul>	
+					</div>
+
+					<div class="col col-md-2">
+						<h5 id="connect" class="footer-header">Connect With Us: </h5>
+						<ion-icon class="social-icons" name="logo-facebook"></ion-icon>
+						<ion-icon class="social-icons" name="logo-instagram"></ion-icon>
+						<ion-icon class="social-icons" name="logo-whatsapp"></ion-icon>
+					</div>
+				</div>
+			</div>
+			<div>
+				<p class="bottom-text">&copy; 2021 Industria ZW</p>
+			</div>	
+		</footer>
+    </section>
+	
+	
+		<script src="main.js" async defer></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	</body>
+</html>
+<!--------------------------------------------- END OF CODE ------------------------------------------------------------------------>
