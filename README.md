@@ -8,9 +8,7 @@ as well as update the quantity of that product (increase/decrease)
   or visit (to view) :
   
   https://industria.netlify.app/
-  
-## Contact
-  If there are any issues related to the project kindly email me at fadzisondoro.gn@gmail.com
+
   
 ## Please note
   This is a demo project. Most infomation used is purely fictional and unrelated to the brand itself
